@@ -1,10 +1,11 @@
 import Navigation from "@/components/Navigation"
+import Advertisement from "@/components/Advertisement"
 
 export default function Home() {
   return (
     <main>
       <Navigation/>
-      {/* Advertisement */}
+      <Advertisement/>
       {/* ShopInfo */}
       {/* ExtraAction */}
       {/* ShopMenu */}
