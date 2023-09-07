@@ -10,12 +10,12 @@ const MenuCategory = () => {
   ]
 
   return (
-    <ul class="max-h-screen space-y-5">
+    <ul class="max-h-screen min-w-[310px] space-y-5">
       {categoryItems.map((item, index) => {
         return (
           <li key={index}>
             <a
-              href="{`#${index}`}"
+              href={`#category-${index}`}
               className=" text-[16px] font-medium text-slate-800 underline-offset-4 duration-300 ease-in hover:underline"
             >
               {item}

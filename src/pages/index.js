@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation"
 import Advertisement from "@/components/Advertisement"
 import ShopInfo from "@/components/ShopInfo"
 import ExtraAction from "@/components/ExtraAction"
+import ShopMenu from "@/components/ShopMenu"
 
 export default function Home() {
   return (
@@ -10,8 +11,7 @@ export default function Home() {
       <Advertisement />
       <ShopInfo />
       <ExtraAction />
-      {/* ShopMenu */}
-      {/* MenuCategory */}
+      <ShopMenu />
       {/* Discount */}
       {/* CategoryItem */}
       {/* Item */}
