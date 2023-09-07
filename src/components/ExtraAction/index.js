@@ -5,18 +5,18 @@ import { CalendarIcon } from "@radix-ui/react-icons"
 const ExtraAction = () => {
   return (
     <div className="my-5 flex w-full justify-between px-10">
-      <div className="flex min-w-[400px] items-center ">
-        <button className="mr-2 flex items-center justify-between rounded-full bg-gray-100 px-4 py-2 text-[14px] font-bold">
-          查看類似商品
+      <div className="flex min-w-[400px] items-center space-x-2">
+        <button className="flex items-center justify-between  space-x-2 rounded-full bg-gray-100 px-4 py-2 text-[14px] font-bold">
+          <span>查看類似商品</span>
           <CaretDownIcon className=" stroke-slate-900" />
         </button>
-        <button className="mr-2 flex items-center justify-between rounded-full bg-gray-100 px-4 py-2 text-[14px] font-bold">
-          <PersonIcon className=" mr-2 stroke-slate-900" />
-          團購訂單
+        <button className="flex items-center justify-between space-x-2 rounded-full bg-gray-100 px-4 py-2 text-[14px] font-bold">
+          <PersonIcon className=" stroke-slate-900" />
+          <span>團購訂單</span>
         </button>
-        <button className="flex items-center justify-between rounded-full bg-gray-100 px-4 py-2 text-[14px] font-bold">
-          <CalendarIcon className=" mr-2  stroke-slate-900" />
-          安排時間
+        <button className="flex items-center justify-between space-x-2 rounded-full bg-gray-100 px-4 py-2 text-[14px] font-bold">
+          <CalendarIcon className=" stroke-slate-900" />
+          <span>安排時間</span>
         </button>
       </div>
       <div className="flex max-h-[48px] w-[438px] rounded-full bg-gray-100 p-1">
