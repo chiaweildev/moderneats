@@ -5,17 +5,17 @@ import { CalendarIcon } from "@radix-ui/react-icons"
 const ExtraAction = () => {
   return (
     <div className="my-5 flex w-full justify-between px-10">
-      <div className="flex min-w-[400px] items-center space-x-2">
+      <div className="flex min-w-[400px] items-center space-x-2 text-slate-800">
         <button className="flex items-center justify-between  space-x-2 rounded-full bg-gray-100 px-4 py-2 text-[14px] font-bold">
           <span>查看類似商品</span>
-          <CaretDownIcon className=" stroke-slate-900" />
+          <CaretDownIcon className=" stroke-slate-800" />
         </button>
         <button className="flex items-center justify-between space-x-2 rounded-full bg-gray-100 px-4 py-2 text-[14px] font-bold">
-          <PersonIcon className=" stroke-slate-900" />
+          <PersonIcon className=" stroke-slate-800" />
           <span>團購訂單</span>
         </button>
         <button className="flex items-center justify-between space-x-2 rounded-full bg-gray-100 px-4 py-2 text-[14px] font-bold">
-          <CalendarIcon className=" stroke-slate-900" />
+          <CalendarIcon className=" stroke-slate-800" />
           <span>安排時間</span>
         </button>
       </div>
