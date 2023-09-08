@@ -12,9 +12,6 @@ export default function Home() {
       <ShopInfo />
       <ExtraAction />
       <ShopMenu />
-      {/* Discount */}
-      {/* CategoryItem */}
-      {/* Item */}
     </main>
   )
 }

@@ -3,7 +3,7 @@ const Item = ({ img, title, price }, index) => {
     return (
       <li
         key={index}
-        className="group ml-0 flex-shrink-0  flex-grow-0 cursor-pointer bg-white px-2  py-2 transition-shadow duration-300 hover:shadow-lg"
+        className="group ml-0 flex-shrink-0  flex-grow-0 cursor-pointer bg-white px-2  py-2 transition-shadow duration-300 hover:shadow-md"
       >
         <div className="relative">
           <img src={img} alt={title} className="h-[188px]" />
@@ -19,7 +19,7 @@ const Item = ({ img, title, price }, index) => {
   return (
     <li
       key={index}
-      className="group relative col-span-2 ml-0 flex-shrink-0 flex-grow-0  cursor-pointer bg-white px-2 py-2 pb-12 transition-shadow hover:shadow-lg"
+      className="group relative col-span-2 ml-0 flex-shrink-0 flex-grow-0  cursor-pointer bg-white px-2 py-2 pb-12 transition-shadow hover:shadow-md"
     >
       <div className="text-[16px]">{title}</div>
       <div className="text-[14px] leading-[14px]">{price}</div>

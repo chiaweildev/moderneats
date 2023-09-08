@@ -27,7 +27,7 @@ const CategoryItem = ({ id, categoryName, categoryItems }) => {
         </ul>
       )}
       {id > 0 && (
-        <ul className="grid w-full list-none grid-cols-4 gap-5 pb-2">
+        <ul className=" grid  w-full list-none grid-cols-[repeat(auto-fill,minmax(235px,1fr))] gap-5 pb-2">
           {categoryItems.map(({ img, title, price }, index) => (
             <Item key={index} img={img} title={title} price={price} />
           ))}
