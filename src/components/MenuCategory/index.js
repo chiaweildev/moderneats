@@ -1,24 +1,14 @@
-const MenuCategory = () => {
-  const categoryItems = [
-    "精選商品",
-    "再次訂購",
-    "您專屬的推薦商品",
-    "豪華套餐",
-    "超值套餐",
-    "單點",
-    "單點麵食",
-  ]
-
+const MenuCategory = ({ data: categoryItems }) => {
   return (
-    <ul class="max-h-screen min-w-[310px] space-y-5">
-      {categoryItems.map((item, index) => {
+    <ul className="max-h-screen min-w-[310px] space-y-5">
+      {categoryItems.map(({ id, categoryName }) => {
         return (
-          <li key={index}>
+          <li key={categoryName}>
             <a
-              href={`#category-${index}`}
+              href={`#category-${id}`}
               className=" text-[16px] font-medium text-slate-800 underline-offset-4 duration-300 ease-in hover:underline"
             >
-              {item}
+              {categoryName}
             </a>
           </li>
         )
