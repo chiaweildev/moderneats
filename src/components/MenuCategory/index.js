@@ -1,6 +1,6 @@
 const MenuCategory = ({ data: categoryItems }) => {
   return (
-    <ul className="max-h-screen min-w-[310px] space-y-5">
+    <ul className="space-y-5">
       {categoryItems.map(({ id, categoryName }) => {
         return (
           <li key={categoryName}>

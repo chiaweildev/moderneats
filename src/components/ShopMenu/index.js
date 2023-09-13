@@ -21,8 +21,12 @@ const ShopMenu = () => {
 
   return (
     <div className="max-x-[1920px] flex min-h-screen w-full px-10">
-      <MenuCategory data={categoryItems} />
-      <CategoryContent data={productItems} />
+      <div className="sticky left-0 top-0 max-h-screen min-w-[310px] pt-4">
+        <MenuCategory data={categoryItems} />
+      </div>
+      <div className="pt-4">
+        <CategoryContent data={productItems} />
+      </div>
     </div>
   )
 }
