@@ -21,15 +21,15 @@ const CategoryItem = ({ categoryName, categoryIndex,  productItemsOfCategory}) =
       </div>
       {categoryIndex === 1 && (
         <ul className="no-scrollbar flex w-full snap-mandatory list-none space-x-4 overflow-x-auto pb-2">
-          {productItemsOfCategory.map(({ id, img, title, price }) => (
-            <Item key={id} img={img} title={title} price={price} />
+          {productItemsOfCategory.map((product) => (
+            <Item key={product.id} data={product} />
           ))}
         </ul>
       )}
       {categoryIndex > 1 && (
         <ul className=" grid  w-full list-none grid-cols-[repeat(auto-fill,minmax(235px,1fr))] gap-5 pb-2">
-          {productItemsOfCategory.map(({id, img, title, price }) => (
-            <Item key={id} img={img} title={title} price={price} />
+          {productItemsOfCategory.map((product) => (
+            <Item key={product.id} data={product} />
           ))}
         </ul>
       )}
