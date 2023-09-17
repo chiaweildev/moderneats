@@ -12,13 +12,13 @@ const AddButton = ({count, onAdd, onRemove}) => {
           >
         {isAdd && (
           <>
-            <TrashIcon onClick={onRemove}/>
-            <span className="text-md px-2">
+            <TrashIcon onClick={onRemove} data-testid="remove-btn"/>
+            <span className="text-md px-2" data-testid="count">
               {count}
             </span>
           </>
         )}
-        <PlusIcon onClick={onAdd}/>
+        <PlusIcon onClick={onAdd} data-testid="add-btn"/>
     </div>
   )
 }
