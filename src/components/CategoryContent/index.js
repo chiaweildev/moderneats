@@ -3,13 +3,13 @@ import CategoryItem from "@/components/CategoryItem"
 const CategoryContent = ({ data: productItems }) => {
   return (
     <>
-      <ul className="list-none overflow-hidden">
-        {productItems.map(({ id, categoryName, categoryItems }) => (
+      <ul className="list-none">
+        {productItems.map(({ category, categoryIndex, productItemsOfCategory }) => (
           <CategoryItem
-            key={categoryName}
-            id={id}
-            categoryName={categoryName}
-            categoryItems={categoryItems}
+            key={category}
+            categoryName={category}
+            categoryIndex={categoryIndex}
+            productItemsOfCategory={productItemsOfCategory}
           />
         ))}
       </ul>
