@@ -5,7 +5,7 @@ import map from "lodash/map"
 
 const Cart = () => {
   const cart = useSelector((state)=>state.cart)
-  const count = map(cart).reduce((acc, cur) => acc+cur)
+  const count = map(cart).reduce((acc, cur) => acc+cur, 0)
   return (
     <div
       className="flex cursor-pointer select-none items-center gap-3 rounded-3xl bg-black
